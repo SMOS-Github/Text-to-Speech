@@ -1,11 +1,166 @@
-﻿*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
-html{
 
+html {
+    font-family: Cera Pro,Verdana,Arial,sans-serif;
 }
-body{
 
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("bggg.jpg");
+    background-size: cover;
+}
+
+.container {
+    height: 70%;
+    width: 40%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    height: 15%;
+    width: 100%;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.opt {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    height: 70%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sliders-f, .slider-s {
+    height: 10%;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.text-box {
+    height: 40%;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lavender;
+    font-size: 1rem;
+    font-family: Cera Pro,Verdana,Arial,sans-serif;
+    resize: vertical;
+}
+
+.btns {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.range-handle {
+    height: 10%;
+    width: 100%;
+}
+
+button {
+    height: 80%;
+    width: 45%;
+    border: none;
+    background-color: lightgray;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: Cera Pro,Verdana,Arial,sans-serif;
+    transition:all 0.15s;
+}
+button:active {
+    font-size: 1.3rem;
+    background-color: gray;
+    transform: scale(1.05);
+}
+
+@media(width>720px){
+    .container {
+        height: 100%;
+        width: 100%;
+        background-color: whitesmoke;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    button{
+        font-size:3rem;
+    }
+    .text-box{
+        padding:50px;
+        font-size:1.5rem;
+    }
+    .range-handle {
+        height: 50%;
+        width: 100%;
+    }
+    .sliders-f, .slider-s {
+        height: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 1.5rem;
+    }
+    select {
+        height: 70%;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        font-size:1.5rem;
+    }
+    h1 {
+        height: 15%;
+        width: 100%;
+        font-size: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
 }

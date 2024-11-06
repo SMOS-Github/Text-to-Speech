@@ -3,23 +3,36 @@
 <head>
     <meta charset="utf-8" />
     <title>Text to Speech</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div class="container">
 
-        <select>
-            <option>
-            </option>
-        </select>
+        <h1>Text to Voice</h1>
 
-        <label for="rate"></label>
-        <input type="range" name="rate" class="range-handle"/>
-        <label for="pitch"></label>
-        <input type="range" name="pitch" class="range-handle"/>
+        <div class="opt">
+            <select name="voice">
+                <option>English(en-US)</option>
+            </select>
+        </div>
 
-        <textarea class="text-box">I love JavaScript</textarea>
-        <button class="stop"></button>
-        <button class="play"></button>
+        <div class="sliders-f">
+            <label for="rate">Rate</label>
+            <input type="range" name="rate" min="0" max="1" step="0.01" value="0.2" class="range-handle" />
+        </div>
+        <div class="slider-s">
+            <label for="pitch">Pitch</label>
+            <input type="range" name="pitch" min="0" max="1" step="0.01" value="0.2" class="range-handle" />
+        </div>
+
+        <textarea class="text-box" name="text">I love JavaScript</textarea>
+
+        <div class="btns">
+            <button class="stop">Stop</button>
+            <button class="play">Play</button>
+        </div>
+
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
